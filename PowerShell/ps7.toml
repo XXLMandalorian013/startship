@@ -1,0 +1,82 @@
+# ~/.config/starship.toml
+
+
+# Change the prompt symbol
+[character]
+success_symbol = '[](bold green)'
+error_symbol = '[✗](bold red)'
+vicmd_symbol = '[❮](bold green)'
+
+# Make the directory name stand out
+[directory]
+style = "bold cyan"
+
+# Show the time on the right side
+[time]
+disabled = false
+format = "[$time]($style) "
+style = "yellow"
+
+[cmd_duration]
+min_time = 50
+show_milliseconds = true
+format = 'underwent [$duration](bold green)'
+show_notifications = true
+
+# Enable battery module
+[battery]
+disabled = false
+
+# when capacity is 90% +
+[[battery.display]] 
+threshold = 90
+style = 'bold green'
+discharging_symbol = ' 󰂂 '
+
+# when capacity is 80% +
+[[battery.display]] 
+threshold = 80
+style = 'bold green'
+discharging_symbol = ' 󰂁 '
+
+# when capacity is 70% +
+[[battery.display]] 
+threshold = 70
+style = 'green'
+discharging_symbol = ' 󰂀 '
+
+# when capacity is 60% +
+[[battery.display]] 
+threshold = 60
+style = 'green'
+discharging_symbol = ' 󰁿 '
+
+# when capacity is 50% +
+[[battery.display]] 
+threshold = 50
+style = 'bold yellow'
+discharging_symbol = ' 󰁾 '
+
+# when capacity is 40% +
+[[battery.display]] 
+threshold = 40
+style = 'bold yellow'
+discharging_symbol = ' 󰁽 '
+
+# when capacity is 30% +
+[[battery.display]] 
+threshold = 30
+style = 'red'
+discharging_symbol = ' 󰁼 '
+
+# when capacity is 20% +
+[[battery.display]] 
+threshold = 20
+style = 'bold red'
+discharging_symbol = ' 󰁻 '
+
+# when capacity is 10% +
+[[battery.display]] 
+threshold = 10
+style = 'bold red'
+discharging_symbol = ' 󰁺 '
